@@ -1,26 +1,10 @@
-#   SECTION 1: Refer to requirements.txt to handle INSTALLATION of DEPENDENCIES
-!pip install --upgrade pip
-!pip install pdfplumber         # for reading PDFs
-!pip install -U pinecone   # for Pinecone vector DB. make sure not using pinecone -client
-!pip install transformers       # for huggingface transformers
-!pip install accelerate         # helps accelerate HF models on GPU
-!pip install bitsandbytes       # for 8-bit inference
-!pip install -U langchain-community
-!pip install pypdf
-!pip install openai
-!pip install torch torchvision torchaudio
-!pip install huggingface_hub
-!pip install transformers sentencepiece accelerate torch
-!pip install requests
-!pip install langchain langgraph pinecone transformers accelerate torch
-!pip install pymupdf
-
+# SECTION 1: Install dependencies. Refer to .env.example to handle ENVIRONMENT VARIABLES
 #  SECTION 2: IMPORTS AND CONFIG
 from langchain.text_splitter import SentenceTransformersTokenTextSplitter, RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader
 import os
 import uuid
-import pinecone, ServerlessSpec
+import Pinecone, ServerlessSpec
 import pickle
 from transformers import AutoTokenizer, AutoModel, pipeline, AutoModelForCausalLM
 import openai

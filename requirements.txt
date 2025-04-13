@@ -1,6 +1,7 @@
 # --- Core libraries ---
 streamlit
 transformers
+sentence-transformers
 torch
 accelerate
 huggingface-hub
@@ -9,6 +10,7 @@ huggingface-hub
 pinecone-client==3.0.2
 
 # --- Langchain graph framework ---
+langchain 
 langgraph
 
 # --- PDF/document processing ---
