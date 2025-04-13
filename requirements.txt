@@ -1,0 +1,24 @@
+# --- Core libraries ---
+streamlit
+transformers
+torch
+accelerate
+huggingface-hub
+
+# --- Vector store ---
+pinecone-client==3.0.2
+
+# --- Langchain graph framework ---
+langgraph
+
+# --- PDF/document processing ---
+pdfplumber
+pypdf
+pymupdf
+
+# --- Additional utilities ---
+bitsandbytes
+sentencepiece
+requests
+
+
